@@ -36,7 +36,7 @@ else{
 
     //add nods to path
     for(int index=3;index<arg2.length();index++){
-        
+        cout<<arg2[index];
         if(arg2[index]=='\\'){
                 path+='/';
         }
