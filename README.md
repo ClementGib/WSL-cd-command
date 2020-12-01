@@ -4,6 +4,6 @@
 ### (Windows Subsystem for Linux)
 
 - compile program : *g++ main.cpp -o wd* (wd is the name of the program for me)
-- copy the compiled program *wd* to : */usr/bin"*
+- copy the compiled program *wd* to : */usr/bin*
 
 
