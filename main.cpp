@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
 
 
 /*
-SHOW COMMAND TO ACCES TO THE DIRECTORY WITH A Windows PATH ON WSL
+SHOW COMMANDTO ACCES TO THE DIRECTORY WITH A Windows PATH ON WSL
 (Windows Subsystem for Linux)
 */
 
@@ -51,4 +51,5 @@ else{
     cout<<path<<endl;
 
     return 0;
+}
 }
