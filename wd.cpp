@@ -40,7 +40,7 @@ else{
             cout<<index<<endl;  
                 path += '/';
         } else {
-            if(isupper(arg2[index]) && index>2) {
+            if(isupper(arg2[index]) && index>2 && !isupper(arg2[index-1])) {
                 path += '/';
                 path += arg2[index];
             } else {
