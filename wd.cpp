@@ -5,10 +5,11 @@
 #include <string>
 #include <cctype>
 #include <unistd.h>
+#include <cstring>
 
 using namespace std;
 
-int main(int argc, char *argv[]){
+int main(int argc, char **argv){
 
 
 /*
@@ -30,16 +31,22 @@ else{
     string arg2(argv[1]);
 
     //get lower case letter of the disk 
-    path+= tolower(arg2[0]);
+    path+=tolower(arg2[0]);
     path+='/';
 
     //add nods to path
-    for(int index=3;index<arg2.length();index++){
-        if(arg2[index]=='\\'){
-                path+='/';
-        }
-        else{
-            path+=arg2[index];
+    for(int index=2;index<arg2.length();index++){
+        if(arg2[index] == '\\'){
+            cout<<index<<endl;  
+                path += '/';
+        } else {
+            if(isupper(arg2[index]) && index>2) {
+                path += '/';
+                path += arg2[index];
+            } else {
+                path+=arg2[index];
+            }
+            
         }
         
     }
